@@ -96,10 +96,11 @@ public class Fragment0201 extends Fragment implements View.OnClickListener {
         gbtSchedules = db.findAllByWhere(GbtSchedule.class, "deviceId = '" + node.getId() + "'");
         initTimeBaseID();
         initSchedules();
-
+        /*****************************************************************************************************
+         */
         sp_schedule = (Spinner) mInflate.findViewById(R.id.sp_schedule);
-        adapter_schedule = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_spinner_item, schedules);
-        adapter_schedule.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        adapter_schedule = new ArrayAdapter<String>(getActivity(), R.layout.spinner_style, schedules);
+        adapter_schedule.setDropDownViewResource(R.layout.spinner_style_item);
         sp_schedule.setAdapter(adapter_schedule);
         sp_schedule.setOnItemSelectedListener(new Spinner.OnItemSelectedListener() {
             public void onItemSelected(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
@@ -134,12 +135,13 @@ public class Fragment0201 extends Fragment implements View.OnClickListener {
 
             }
         });
+        /***********************************************************************************/
 
         mySpinner = (Spinner) mInflate.findViewById(R.id.sp_basetime_id);
         //第二步：为下拉列表定义一个适配器，这里就用到里前面定义的list。
-        adapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_spinner_item, list);
+        adapter = new ArrayAdapter<String>(getActivity(), R.layout.spinner_style, list);
         //第三步：为适配器设置下拉列表下拉时的菜单样式。
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        adapter.setDropDownViewResource(R.layout.spinner_style_item);
         //第四步：将适配器添加到下拉列表上
         mySpinner.setAdapter(adapter);
         //第五步：为下拉列表设置各种事件的响应，这个事响应菜单被选中

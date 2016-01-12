@@ -19,7 +19,8 @@
                 android:layout_height="wrap_content"
                 android:text="时基编号"/>
             <Spinner
-                android:layout_width="wrap_content"
+                android:background="@color/btn01"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/sp_basetime_id" />
         </LinearLayout>
@@ -36,7 +37,8 @@
                 android:text="时段编号"/>
 
             <Spinner
-                android:layout_width="wrap_content"
+                android:background="@color/btn01"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/sp_schedule" />
         </LinearLayout>

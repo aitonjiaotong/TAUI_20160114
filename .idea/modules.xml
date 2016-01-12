@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/TAUI.iml" filepath="$PROJECT_DIR$/TAUI.iml" />
-      <module fileurl="file://$PROJECT_DIR$/TAUI/TAUI-TAUI.iml" filepath="$PROJECT_DIR$/TAUI/TAUI-TAUI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TAUIFRIST.iml" filepath="$PROJECT_DIR$/TAUIFRIST.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
