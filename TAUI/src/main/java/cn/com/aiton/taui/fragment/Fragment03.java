@@ -12,6 +12,7 @@ import android.text.method.ScrollingMovementMethod;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.NumberPicker;
 import android.widget.RadioButton;
@@ -107,6 +108,8 @@ public class Fragment03 extends Fragment implements View.OnClickListener
     private ImageView westPedestrain2;
     private ImageView westNone1;
     private ImageView westNone2;
+    private Button configSaveToTsc;
+    private Button checkData;
 
     public Fragment03()
     {
@@ -202,6 +205,8 @@ public class Fragment03 extends Fragment implements View.OnClickListener
         westNone1 = (ImageView) mLayout.findViewById(R.id.westNone1);
         westNone2 = (ImageView) mLayout.findViewById(R.id.westNone2);
 
+        configSaveToTsc = (Button) mLayout.findViewById(R.id.configSaveToTsc);
+        checkData = (Button) mLayout.findViewById(R.id.checkData);
     }
 
     /**
@@ -593,10 +598,8 @@ public class Fragment03 extends Fragment implements View.OnClickListener
 
     /**
      * 主要是将更改后的相位，方向数据保存到信号机中。以便信号机在下一个周期立刻生效
-     *
-     * @param view
      */
-    public void configSaveToTsc(View view)
+    public void configSaveToTsc()
     {
         sendTscNode = AndroidTscDefine.spToTscNode(AndroidTscDefine.getSharedPreferences(getActivity()));
         sendGbtDirecs = AndroidTscDefine.getFinalDb(getActivity()).findAllByWhere(GbtDirec.class, "deviceId = '" + sendTscNode.getId() + "'");
@@ -604,7 +607,7 @@ public class Fragment03 extends Fragment implements View.OnClickListener
         t1.start();
     }
 
-    public void checkData(View view)
+    public void checkData()
     {
         TscNode node = AndroidTscDefine.spToTscNode(AndroidTscDefine.getSharedPreferences(getActivity()));
         List<GbtDirec> gbtDirecs = AndroidTscDefine.getFinalDb(getActivity()).findAllByWhere(GbtDirec.class, "deviceId = '" + node.getId() + "'");
@@ -860,6 +863,9 @@ public class Fragment03 extends Fragment implements View.OnClickListener
         westPedestrain2.setOnClickListener(this);
         westNone1.setOnClickListener(this);
         westNone2.setOnClickListener(this);
+
+        configSaveToTsc.setOnClickListener(this);
+        checkData.setOnClickListener(this);
     }
 
     @Override
@@ -963,6 +969,14 @@ public class Fragment03 extends Fragment implements View.OnClickListener
             case R.id.westNone2:
                 westNone2();
                 break;
+
+            case R.id.configSaveToTsc:
+                configSaveToTsc();
+                break;
+            case R.id.checkData:
+                checkData();
+                break;
+
         }
     }
 }
