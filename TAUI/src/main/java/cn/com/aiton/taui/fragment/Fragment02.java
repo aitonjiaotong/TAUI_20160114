@@ -55,10 +55,10 @@ public class Fragment02 extends Fragment implements View.OnClickListener {
     }
 
     private void selectBtn(int m) {
-        btnTabs[m%4].setBackgroundResource(R.color.btn02);
-        btnTabs[(m+1)%4].setBackgroundResource(R.color.top_view_color);
-        btnTabs[(m+2)%4].setBackgroundResource(R.color.top_view_color);
-        btnTabs[(m+3)%4].setBackgroundResource(R.color.top_view_color);
+        btnTabs[m%4].setBackgroundResource(R.color.top_view_color);
+        btnTabs[(m+1)%4].setBackgroundResource(R.color.btn02);
+        btnTabs[(m+2)%4].setBackgroundResource(R.color.btn02);
+        btnTabs[(m+3)%4].setBackgroundResource(R.color.btn02);
     }
 
     private void initFragment() {

@@ -1,188 +1,314 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             xmlns:tools="http://schemas.android.com/tools"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
               android:orientation="vertical"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent"
-             tools:context="cn.com.aiton.taui.fragment.Fragment0201">
+              tools:context="cn.com.aiton.taui.fragment.Fragment0201">
+
     <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
         android:orientation="horizontal">
+
         <LinearLayout
             android:layout_width="wrap_content"
-            android:orientation="vertical"
+            android:layout_height="match_parent"
             android:layout_weight="0.5"
-            android:layout_height="wrap_content">
-            <TextView
-                android:textSize="30dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="时基编号"/>
-            <Spinner
-                android:background="@color/btn01"
+            android:orientation="vertical">
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/sp_basetime_id" />
+                android:layout_height="2.5dp"
+                android:background="@color/line_white"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/btn01"
+                android:gravity="center"
+                android:text="时基编号"
+                android:textSize="30sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2.5dp"
+                android:background="@color/line_white">
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/sp_basetime_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/btn01"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="2.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/line_white">
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
-            android:orientation="vertical"
+            android:layout_height="match_parent"
             android:layout_weight="0.5"
-            android:layout_height="wrap_content">
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2.5dp"
+                android:background="@color/line_white"/>
+
             <TextView
-                android:textSize="30dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="时段编号"/>
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/btn01"
+                android:gravity="center"
+                android:text="时段编号"
+                android:textSize="30sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2.5dp"
+                android:background="@color/line_white"/>
 
             <Spinner
-                android:background="@color/btn01"
+                android:id="@+id/sp_schedule"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/sp_schedule" />
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/btn01"
+                android:gravity="center"/>
         </LinearLayout>
     </LinearLayout>
+
     <LinearLayout
-        android:background="@color/light_blue"
         android:layout_width="match_parent"
-        android:orientation="vertical"
-        android:layout_height="wrap_content">
+        android:layout_height="2.5dp"
+        android:background="@color/line_white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/light_blue"
+        android:orientation="vertical">
+
         <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:textSize="30dp"
-            android:text="月份"/>
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="月份"
+            android:textSize="30sp"/>
+
         <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+            android:layout_weight="1"
             android:orientation="horizontal">
 
             <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/january"
                 android:id="@+id/cbxJanuary"
-                android:layout_weight="1"/>
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/check_selector"
+                android:text="@string/january"/>
 
             <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/february"
                 android:id="@+id/cbxFebruary"
-                android:layout_weight="1"/>
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/check_selector"
+                android:text="@string/february"/>
 
             <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/march"
                 android:id="@+id/cbxMarch"
-                android:layout_weight="1"/>
 
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/check_selector"
+                android:text="@string/march"/>
 
 
         </LinearLayout>
+
         <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+            android:layout_weight="1"
             >
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/april"
-                android:layout_weight="1"
-                android:id="@+id/cbxApril"/>
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/may"
-                android:layout_weight="1"
-                android:id="@+id/cbxMay" />
 
             <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/june"
+                android:id="@+id/cbxApril"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:id="@+id/cbxJune"/>
-
-
-
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content">
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/july"
-                android:layout_weight="1"
-                android:id="@+id/cbxJuly" />
+                android:background="@drawable/check_selector"
+                android:text="@string/april"/>
 
             <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/august"
+                android:id="@+id/cbxMay"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:id="@+id/cbxAugust" />
+                android:background="@drawable/check_selector"
+                android:text="@string/may"/>
+
             <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/september"
+                android:id="@+id/cbxJune"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:id="@+id/cbxSeptember" />
+                android:background="@drawable/check_selector"
+                android:text="@string/june"/>
+
 
         </LinearLayout>
+
         <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content">
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+            android:layout_weight="1">
 
             <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/october"
+                android:id="@+id/cbxJuly"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:id="@+id/cbxOctober" />
+                android:background="@drawable/check_selector"
+                android:text="@string/july"/>
+
             <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/november"
+                android:id="@+id/cbxAugust"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:id="@+id/cbxNovember" />
+                android:background="@drawable/check_selector"
+                android:text="@string/august"/>
+
             <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/december"
+                android:id="@+id/cbxSeptember"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:id="@+id/cbxDecember" />
+                android:background="@drawable/check_selector"
+                android:text="@string/september"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <CheckBox
+                    android:id="@+id/cbxOctober"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/check_selector"
+                    android:text="@string/october"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <CheckBox
+                    android:id="@+id/cbxNovember"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/check_selector"
+                    android:text="@string/november"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <CheckBox
+                    android:id="@+id/cbxDecember"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/check_selector"
+                    android:text="@string/december"/>
+            </RelativeLayout>
         </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content">
+        android:layout_width="match_parent"
+        android:layout_height="2.5dp"
+        android:background="@color/line_white"/>
 
-
-    </LinearLayout>
     <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2">
 
 
         <Button
             android:id="@+id/btMonthBtnRead"
-            android:visibility="visible"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/sendtotsc"/>
+            android:background="@drawable/btn_secector"
+            android:gravity="center"
+            android:text="@string/sendtotsc"
+            android:visibility="visible"/>
+
+        <LinearLayout
+            android:layout_width="2.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/line_white"/>
+
         <Button
             android:id="@+id/btMonthBtnSave"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="@drawable/btn_secector"
+            android:gravity="center"
             android:text="@string/submit"/>
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2.5dp"
+        android:background="@color/line_white"/>
 
 </LinearLayout>

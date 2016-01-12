@@ -7,7 +7,6 @@
     <TextView
         android:gravity="center"
         android:background="@drawable/tabs_item_selector"
-        android:layout_margin="2.5dp"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:text="New Text"

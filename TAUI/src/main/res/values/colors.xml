@@ -31,7 +31,8 @@
     <color name="buttom_centre">#303030</color>
     <color name="buttom_buttom">#000000</color>
 
-    <color name="top_view_color">#37e6ff</color>
-    <color name="btn01">#6fcaff</color>
+    <color name="top_view_color">#ffffff</color>
+    <color name="btn01">#23b7ff</color>
     <color name="btn02">#ffb342</color>
+    <color name="line_white">#ffffff</color>
 </resources>

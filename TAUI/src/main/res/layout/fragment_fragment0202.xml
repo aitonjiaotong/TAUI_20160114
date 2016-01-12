@@ -1,152 +1,248 @@
-
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               xmlns:tools="http://schemas.android.com/tools"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:orientation="vertical"
+              android:background="@color/line_white"
               tools:context="cn.com.aiton.taui.BasetimeWeekActivity">
-<LinearLayout
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal">
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:orientation="vertical"
-        android:layout_weight="0.5"
-        android:layout_height="wrap_content">
-        <TextView
-            android:textSize="30dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="时基编号"/>
-        <Spinner
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/sp_week_basetime_id" />
-    </LinearLayout>
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:orientation="vertical"
-        android:layout_weight="0.5"
-        android:layout_height="wrap_content">
-        <TextView
-            android:textSize="30dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="时段编号"/>
-
-        <Spinner
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/sp_week_schedule" />
-    </LinearLayout>
-</LinearLayout>
-<LinearLayout
-    android:layout_width="match_parent"
-    android:background="@color/light_blue"
-    android:orientation="vertical"
-    android:layout_height="wrap_content">
-    <TextView
+        android:layout_weight="2"
         android:layout_width="fill_parent"
-        android:textSize="30dp"
-        android:layout_height="wrap_content"
-        android:text="日期"/>
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content">
-        <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/monday"
-            android:id="@+id/cbxMonday"
-            android:layout_weight="1"
-            />
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
 
-        <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/tuesday"
-            android:layout_weight="1"
-            android:id="@+id/cbxTuesday"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:orientation="vertical">
 
-        <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/wednesday"
-            android:layout_weight="1"
-            android:id="@+id/Wednesday" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2.5dp"
+                android:background="@color/line_white"/>
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/btn01"
+                android:gravity="center"
+                android:text="时基编号"
+                android:textSize="30sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2.5dp"
+                android:background="@color/line_white">
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/sp_week_basetime_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/btn01"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="2.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/line_white"/>
+
+        <LinearLayout
+            android:background="@color/btn01"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2.5dp"
+                android:background="@color/line_white"/>
+
+            <TextView
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/btn01"
+                android:gravity="center"
+                android:text="时段编号"
+                android:textSize="30sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2.5dp"
+                android:background="@color/line_white"/>
+
+            <Spinner
+                android:id="@+id/sp_week_schedule"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/btn01"
+                android:gravity="center"/>
+        </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content">
-        <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/thursday"
-            android:layout_weight="1"
-            android:id="@+id/cbxThursday"/>
+        android:layout_width="match_parent"
+        android:layout_height="2.5dp"
+        android:background="@color/line_white"/>
 
-        <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/friday"
-            android:layout_weight="1"
-            android:id="@+id/cbxFriday"/>
-
-        <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/saturday"
-            android:layout_weight="1"
-            android:id="@+id/cbxSaturday" />
-
-
-    </LinearLayout>
     <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content">
-        <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/sunday"
-            android:layout_weight="1"
-            android:id="@+id/cbxSunday" />
-
-        <CheckBox
-            android:visibility="invisible"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/all"
-            android:layout_weight="1"
-            android:id="@+id/cbxAll" />
-
-
-    </LinearLayout>
-</LinearLayout>
-
-
-<LinearLayout
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content">
-
-
-    <Button
-        android:visibility="visible"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/sendtotsc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_weight="1"
-        android:id="@+id/btnRead"/>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/submit"
-        android:layout_weight="1"
-        android:id="@+id/btnSubmit"/>
-</LinearLayout>
+        android:background="@color/light_blue"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="日期"
+            android:textSize="30sp"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <CheckBox
+                android:id="@+id/cbxMonday"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/check_selector"
+                android:text="@string/monday"
+                />
+
+            <CheckBox
+                android:id="@+id/cbxTuesday"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/check_selector"
+                android:text="@string/tuesday"/>
+
+            <CheckBox
+                android:id="@+id/Wednesday"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/check_selector"
+                android:text="@string/wednesday"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <CheckBox
+                android:id="@+id/cbxThursday"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/check_selector"
+                android:text="@string/thursday"/>
+
+            <CheckBox
+                android:id="@+id/cbxFriday"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/check_selector"
+                android:text="@string/friday"/>
+
+            <CheckBox
+                android:id="@+id/cbxSaturday"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/check_selector"
+                android:text="@string/saturday"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/btn01">
+
+            <CheckBox
+                android:id="@+id/cbxSunday"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/check_selector"
+                android:text="@string/sunday"/>
+
+            <CheckBox
+                android:id="@+id/cbxAll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/check_selector"
+                android:text="@string/all"
+                android:visibility="invisible"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2.5dp"
+        android:background="@color/line_white"/>
+
+    <LinearLayout
+        android:layout_weight="2"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent">
+
+
+        <Button
+            android:id="@+id/btnRead"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_secector"
+            android:gravity="center"
+            android:text="@string/sendtotsc"
+            android:visibility="visible"/>
+
+        <LinearLayout
+            android:layout_width="2.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/line_white"/>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_secector"
+            android:gravity="center"
+            android:text="@string/submit"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2.5dp"
+        android:background="@color/line_white"/>
 
 
 </LinearLayout>
