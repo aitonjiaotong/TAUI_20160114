@@ -350,7 +350,7 @@
                         android:layout_height="wrap_content"
                         android:textColor="@color/red"
                         android:textSize="15dp"
-                        android:text=" "/>
+                        android:text=" 333333333333333"/>
                     <ImageView
                         android:onClick="southStraight"
                         android:layout_width="20dp"
@@ -786,11 +786,11 @@
 
 
     <LinearLayout
-        android:layout_width="fill_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:scrollbars="horizontal"
-        >
+        android:layout_gravity="left">
 <Button
     android:onClick="configSaveToTsc"
     android:layout_width="wrap_content"
