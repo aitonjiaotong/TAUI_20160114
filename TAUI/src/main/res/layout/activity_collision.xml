@@ -1,0 +1,978 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cn.com.aiton.taui.CollisionActivity">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+
+            >
+            <ImageView
+                android:layout_width="600dp"
+                android:layout_height="600dp"
+                android:src="@drawable/back20130627"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="left|center_vertical">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginLeft="10dp"
+                    >
+
+
+                    <ImageView
+                        android:onClick="collisionWestLeft"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/collision_westLeft"
+                        android:src="@drawable/offone"
+                        />
+                    <TextView
+                        android:id="@+id/tv_westleft"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/red"
+                        android:textSize="15dp"
+                        android:text=" "/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp"
+                    >
+
+
+                    <ImageView
+                        android:onClick="collisionWestStriaght"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/collision_westStriaght"
+                        android:src="@drawable/offone"
+                        />
+                    <TextView
+                        android:id="@+id/tv_weststraight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/red"
+                        android:textSize="15dp"
+                        android:text=" "/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp"
+                    >
+                    <ImageView
+                        android:onClick="collisionWestRight"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/collision_westRight"
+                        android:src="@drawable/offone"
+                        />
+                    <TextView
+                        android:id="@+id/tv_westright"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/red"
+                        android:textSize="15dp"
+                        android:text=" "/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp"
+                    >
+                    <ImageView
+                        android:onClick="collisionWestOther"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/collision_westOther"
+                        android:src="@drawable/offone"
+                        />
+                    <TextView
+                        android:id="@+id/tv_westother"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/red"
+                        android:textSize="15dp"
+                        android:text=" "/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="right|center_vertical">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="10dp"
+                    >
+                    <TextView
+                        android:id="@+id/tv_eastother"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/red"
+                        android:textSize="15dp"
+                        android:text=" "/>
+                    <ImageView
+                        android:onClick="collisionEastOther"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/collision_eastOther"
+                        android:src="@drawable/offone"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="10dp"
+                    >
+                    <TextView
+                        android:id="@+id/tv_eastright"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/red"
+                        android:textSize="15dp"
+                        android:text=" "/>
+                    <ImageView
+                        android:onClick="collisionEastRight"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/collision_eastRight"
+                        android:src="@drawable/offone"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="10dp"
+                    >
+                    <TextView
+                        android:id="@+id/tv_eaststraight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/red"
+                        android:textSize="15dp"
+
+                        android:text=" "/>
+                    <ImageView
+                        android:onClick="collisionEastStriaght"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/collision_eastStriaght"
+                        android:src="@drawable/offone"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="60dp"
+                    >
+                    <TextView
+                        android:id="@+id/tv_eastleft"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/red"
+                        android:textSize="15dp"
+                        android:text=" "/>
+                    <ImageView
+                        android:onClick="collisionEastLeft"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/collision_eastLeft"
+                        android:src="@drawable/offone"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|top"
+                android:layout_marginRight="20dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp"
+                    >
+                    <ImageView
+                        android:onClick="collisionNorthOther"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/collision_northOther"
+                        android:src="@drawable/offone"
+                        />
+                    <TextView
+                        android:id="@+id/tv_northother"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/red"
+                        android:textSize="15dp"
+                        android:text=" "/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp"
+                    >
+                    <ImageView
+                        android:onClick="collisionNorthRight"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/collision_northRight"
+                        android:src="@drawable/offone"
+                        />
+                    <TextView
+                        android:id="@+id/tv_northright"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/red"
+                        android:textSize="15dp"
+                        android:text=" "/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp"
+                    >
+                    <ImageView
+
+                        android:onClick="collisionNorthStriaght"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/collision_northStriaght"
+                        android:src="@drawable/offone"
+                        />
+                    <TextView
+                        android:id="@+id/tv_northstraight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/red"
+                        android:textSize="15dp"
+                        android:text=" "/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    android:layout_gravity="right|top"
+                    android:layout_marginRight="60dp"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <ImageView
+                        android:onClick="collisionNorthLeft"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/collision_northLeft"
+                        android:src="@drawable/offone"
+                        />
+                    <TextView
+                        android:id="@+id/tv_northleft"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/red"
+                        android:textSize="15dp"
+                        android:text=" "/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_gravity="center_horizontal|bottom">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="left|bottom"
+                    android:layout_marginBottom="10dp"
+                    >
+                    <TextView
+                        android:id="@+id/tv_southleft"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/red"
+                        android:textSize="15dp"
+                        android:text=" "/>
+                    <ImageView
+                        android:onClick="collisionSouthLeft"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/collision_southLeft"
+                        android:src="@drawable/offone"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="left|bottom"
+                    android:layout_marginBottom="10dp"
+                    >
+                    <TextView
+                        android:id="@+id/tv_southstraight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/red"
+                        android:textSize="15dp"
+                        android:text=" "/>
+                    <ImageView
+                        android:onClick="collisionSouthStraight"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/collision_southStraight"
+                        android:src="@drawable/offone"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="left|bottom"
+                    android:layout_marginBottom="10dp"
+                    >
+                    <TextView
+                        android:id="@+id/tv_southright"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/red"
+                        android:textSize="15dp"
+                        android:text=" "/>
+                    <ImageView
+                        android:onClick="collisionSouthRight"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/collision_southRight"
+                        android:src="@drawable/offone"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="left|bottom"
+                    android:layout_marginBottom="10dp"
+                    >
+                    <TextView
+                        android:id="@+id/tv_southother"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/red"
+                        android:textSize="15dp"
+                        android:text=" "/>
+                    <ImageView
+                        android:onClick="collisionSouthOther"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/collision_southOther"
+                        android:src="@drawable/offone"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|bottom"
+                android:orientation="vertical"
+                android:layout_marginLeft="140dp"
+                android:layout_marginBottom="240dp" >
+                <TextView
+                    android:id="@+id/tv_westpedestrain1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:textSize="15dp"
+                    android:text=" "/>
+                <ImageView
+                    android:onClick="collisionWestPedestrain1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/offone"
+                    android:id="@+id/collision_westPedestrain1"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|bottom"
+                android:layout_marginLeft="240dp"
+                android:layout_marginBottom="140dp">
+                <ImageView
+                    android:onClick="collisionSouthPedestrain1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/offone"
+                    android:id="@+id/collision_southPedestrain1" />
+                <TextView
+                    android:id="@+id/tv_southpedestrain1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:textSize="15dp"
+                    android:text=" "/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|bottom"
+                android:layout_marginRight="240dp"
+                android:layout_marginBottom="140dp" >
+                <TextView
+                    android:id="@+id/tv_southpedestrain2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:textSize="15dp"
+                    android:text=" "/>
+                <ImageView
+                    android:onClick="collisionSouthPedestrain2"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/offone"
+                    android:id="@+id/collision_southPedestrain2"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|bottom"
+                android:orientation="vertical"
+                android:layout_marginRight="140dp"
+                android:layout_marginBottom="240dp" >
+                <TextView
+                    android:id="@+id/tv_eastpedestrain2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:textSize="15dp"
+                    android:text=" "/>
+                <ImageView
+                    android:onClick="collisionEastPedestrain2"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/offone"
+                    android:id="@+id/collision_eastPedestrain2"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="right|top"
+                android:layout_marginRight="240dp"
+                android:layout_marginTop="140dp"
+                >
+                <TextView
+                    android:id="@+id/tv_northpedestrain2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:textSize="15dp"
+                    android:text=" "/>
+                <ImageView
+                    android:onClick="collisionNorthPedestrain2"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/offone"
+                    android:id="@+id/collision_northPedestrain2"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|top"
+                android:orientation="vertical"
+                android:layout_marginRight="140dp"
+                android:layout_marginTop="240dp">
+                <ImageView
+                    android:onClick="collisionEastPedestrain1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/offone"
+                    android:id="@+id/collision_eastPedestrain1" />
+                <TextView
+                    android:id="@+id/tv_eastpedestrain1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:textSize="15dp"
+                    android:text=" "/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="left|top"
+                android:layout_marginLeft="240dp"
+                android:layout_marginTop="140dp"
+                >
+                <ImageView
+                    android:onClick="collisionNorthPedestrain1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/offone"
+                    android:id="@+id/collision_northPedestrain1" />
+                <TextView
+                    android:id="@+id/tv_northpedestrain1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:textSize="15dp"
+                    android:text=" "/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="left|top"
+                android:layout_marginLeft="140dp"
+                android:layout_marginTop="240dp">
+                <ImageView
+                    android:onClick="collisionWestPedestrain2"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/offone"
+                    android:id="@+id/collision_westPedestrain2" />
+                <TextView
+                    android:id="@+id/tv_westpedestrain2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:textSize="15dp"
+                    android:text=" "/>
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="西方向备用"
+                android:layout_gravity="left|top"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/white" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="left|top"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                >
+                <ImageView
+                    android:onClick="collisionWestNone1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/offone"
+                    android:id="@+id/collision_westNone1" />
+                <TextView
+                    android:id="@+id/tv_westnone1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:textSize="15dp"
+                    android:text=" "/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|top"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp" >
+
+                <ImageView
+                    android:onClick="collisionWestNone2"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/offone"
+                    android:id="@+id/collision_westNone2"/>
+                <TextView
+                    android:id="@+id/tv_westnone2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:textSize="15dp"
+                    android:text=" "/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="北方向备用"
+                android:layout_gravity="right|top"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/white" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|top"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp">
+                <ImageView
+                    android:onClick="collisionNorthNone2"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/offone"
+                    android:id="@+id/collision_northNone2" />
+                <TextView
+                    android:id="@+id/tv_northnone2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:textSize="15dp"
+                    android:text=" "/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|top"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="10dp">
+                <ImageView
+                    android:onClick="collisionNorthNone1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/offone"
+                    android:id="@+id/collision_northNone1" />
+                <TextView
+                    android:id="@+id/tv_northnone1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:textSize="15dp"
+                    android:text=" "/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="东方向备用"
+                android:layout_gravity="right|bottom"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="30dp"
+                android:textColor="@color/white" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|bottom"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp">
+                <ImageView
+                    android:onClick="collisionEastNone1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/offone"
+                    android:id="@+id/collision_eastNone1" />
+                <TextView
+                    android:id="@+id/tv_eastnone1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:textSize="15dp"
+                    android:text=" "/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|bottom"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="10dp">
+                <ImageView
+                    android:onClick="collisionEastNone2"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/offone"
+                    android:id="@+id/collision_eastNone2" />
+                <TextView
+                    android:id="@+id/tv_eastnone2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:textSize="15dp"
+                    android:text=" "/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="南方向备用"
+                android:layout_gravity="left|bottom"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="30dp"
+                android:textColor="@color/white" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|bottom"
+                android:layout_marginLeft="50dp"
+                android:layout_marginBottom="10dp" >
+                <ImageView
+                    android:onClick="collisionSouthNone2"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/offone"
+                    android:id="@+id/collision_southNone2"/>
+                <TextView
+                    android:id="@+id/tv_southnone2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:textSize="15dp"
+                    android:text=" "/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|bottom"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp">
+                <ImageView
+                    android:onClick="collisionSouthNone1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/offone"
+                    android:id="@+id/collision_southNone1" />
+                <TextView
+                    android:id="@+id/tv_southnone1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:textSize="15dp"
+                    android:text=" "/>
+            </LinearLayout>
+
+        </FrameLayout>
+    </LinearLayout>
+
+
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/horizontalScrollView">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:scrollbars="horizontal">
+
+        <include
+            android:id="@+id/collision1"
+            layout="@layout/small_phase_direc"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+
+        <include
+            android:id="@+id/collision2"
+            layout="@layout/small_phase_direc"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+
+        <include
+            android:id="@+id/collision3"
+            layout="@layout/small_phase_direc"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+
+        <include
+            android:id="@+id/collision4"
+            layout="@layout/small_phase_direc"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+
+        <include
+            android:id="@+id/collision5"
+            layout="@layout/small_phase_direc"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+
+        <include
+            android:id="@+id/collision6"
+            layout="@layout/small_phase_direc"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+
+        <include
+            android:id="@+id/collision7"
+            layout="@layout/small_phase_direc"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+
+        <include
+            android:id="@+id/collision8"
+            layout="@layout/small_phase_direc"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+
+        <include
+            android:id="@+id/collision9"
+            layout="@layout/small_phase_direc"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+        <include
+            android:id="@+id/collision10"
+            layout="@layout/small_phase_direc"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+        <include
+            android:id="@+id/collision11"
+            layout="@layout/small_phase_direc"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+        <include
+            android:id="@+id/collision12"
+            layout="@layout/small_phase_direc"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+        <include
+            android:id="@+id/collision13"
+            layout="@layout/small_phase_direc"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+        <include
+            android:id="@+id/collision14"
+            layout="@layout/small_phase_direc"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+        <include
+            android:id="@+id/collision15"
+            layout="@layout/small_phase_direc"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+        <include
+            android:id="@+id/collision16"
+            layout="@layout/small_phase_direc"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+        <include
+            android:id="@+id/collision17"
+            layout="@layout/small_phase_direc"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+
+        <include
+            android:id="@+id/collision18"
+            layout="@layout/small_phase_direc"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+
+        <include
+            android:id="@+id/collision19"
+            layout="@layout/small_phase_direc"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+
+        <include
+            android:id="@+id/collision20"
+            layout="@layout/small_phase_direc"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+
+        <include
+            android:id="@+id/collision21"
+            layout="@layout/small_phase_direc"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+
+        <include
+            android:id="@+id/collision22"
+            layout="@layout/small_phase_direc"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+
+        <include
+            android:id="@+id/collision23"
+            layout="@layout/small_phase_direc"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+
+        <include
+            android:id="@+id/collision24"
+            layout="@layout/small_phase_direc"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+
+        <include
+            android:id="@+id/collision25"
+            layout="@layout/small_phase_direc"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+        <include
+            android:id="@+id/collision26"
+            layout="@layout/small_phase_direc"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+        <include
+            android:id="@+id/collision27"
+            layout="@layout/small_phase_direc"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+        <include
+            android:id="@+id/collision28"
+            layout="@layout/small_phase_direc"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+        <include
+            android:id="@+id/collision29"
+            layout="@layout/small_phase_direc"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+        <include
+            android:id="@+id/collision30"
+            layout="@layout/small_phase_direc"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+        <include
+            android:id="@+id/collision31"
+            layout="@layout/small_phase_direc"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+        <include
+            android:id="@+id/collision32"
+            layout="@layout/small_phase_direc"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+    </LinearLayout>
+</HorizontalScrollView>
+
+</LinearLayout>

@@ -1,0 +1,824 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context="cn.com.aiton.taui.PhaseConfigActivity">
+
+<LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+
+            >
+            <ImageView
+                android:layout_width="600dp"
+                android:layout_height="600dp"
+                android:src="@drawable/back20130627"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="left|center_vertical">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginLeft="10dp"
+                    >
+
+
+                    <ImageView
+                        android:onClick="westLeft"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:id="@+id/westLeft"
+                        android:src="@drawable/greenone"
+                        />
+                    <TextView
+                        android:id="@+id/tv_westleft"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/red"
+                        android:textSize="15dp"
+                        android:text=" "/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp"
+                    >
+
+
+                    <ImageView
+                        android:onClick="westStriaght"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:id="@+id/westStriaght"
+                        android:src="@drawable/greenone"
+                        />
+                    <TextView
+                        android:id="@+id/tv_weststraight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/red"
+                        android:textSize="15dp"
+                        android:text=" "/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp"
+                    >
+                    <ImageView
+                        android:onClick="westRight"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:id="@+id/westRight"
+                        android:src="@drawable/greenone"
+                        />
+                    <TextView
+                        android:id="@+id/tv_westright"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/red"
+                        android:textSize="15dp"
+                        android:text=" "/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp"
+                    >
+                    <ImageView
+                        android:onClick="westOther"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:id="@+id/westOther"
+                        android:src="@drawable/greenone"
+                        />
+                    <TextView
+                        android:id="@+id/tv_westother"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/red"
+                        android:textSize="15dp"
+                        android:text=" "/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="right|center_vertical">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="10dp"
+                    >
+                    <TextView
+                        android:id="@+id/tv_eastother"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/red"
+                        android:textSize="15dp"
+                        android:text=" "/>
+                    <ImageView
+                        android:onClick="eastOther"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/eastOther"
+                        android:src="@drawable/greenone"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="10dp"
+                    >
+                    <TextView
+                        android:id="@+id/tv_eastright"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/red"
+                        android:textSize="15dp"
+                        android:text=" "/>
+                    <ImageView
+                        android:onClick="eastRight"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/eastRight"
+                        android:src="@drawable/greenone"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="10dp"
+                    >
+                    <TextView
+                        android:id="@+id/tv_eaststraight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/red"
+                        android:textSize="15dp"
+
+                        android:text=" "/>
+                    <ImageView
+                        android:onClick="eastStriaght"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/eastStriaght"
+                        android:src="@drawable/greenone"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="60dp"
+                    >
+                    <TextView
+                        android:id="@+id/tv_eastleft"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/red"
+                        android:textSize="15dp"
+                        android:text=" "/>
+                    <ImageView
+                        android:onClick="eastLeft"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/eastLeft"
+                        android:src="@drawable/greenone"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|top">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp"
+                    >
+                    <ImageView
+                        android:onClick="northOther"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/northOther"
+                        android:src="@drawable/greenone"
+                        />
+                    <TextView
+                        android:id="@+id/tv_northother"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/red"
+                        android:textSize="15dp"
+                        android:text=" "/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp"
+                    >
+                    <ImageView
+                        android:onClick="northRight"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/northRight"
+                        android:src="@drawable/greenone"
+                        />
+                    <TextView
+                        android:id="@+id/tv_northright"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/red"
+                        android:textSize="15dp"
+                        android:text=" "/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp"
+                    >
+                    <ImageView
+
+                        android:onClick="northStriaght"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/northStriaght"
+                        android:src="@drawable/greenone"
+                        />
+                    <TextView
+                        android:id="@+id/tv_northstraight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/red"
+                        android:textSize="15dp"
+                        android:text=" "/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    android:layout_gravity="right|top"
+                    android:layout_marginRight="60dp"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <ImageView
+                        android:onClick="northLeft"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/northLeft"
+                        android:src="@drawable/greenone"
+                        />
+                    <TextView
+                        android:id="@+id/tv_northleft"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/red"
+                        android:textSize="15dp"
+                        android:text=" "/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="left|bottom"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginBottom="10dp"
+                    >
+                    <TextView
+                        android:id="@+id/tv_southleft"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/red"
+                        android:textSize="15dp"
+                        android:text=" "/>
+                    <ImageView
+                        android:onClick="southLeft"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/southLeft"
+                        android:src="@drawable/greenone"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="left|bottom"
+                    android:layout_marginBottom="10dp"
+                    >
+                    <TextView
+                        android:id="@+id/tv_southstraight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/red"
+                        android:textSize="15dp"
+                        android:text=" "/>
+                    <ImageView
+                        android:onClick="southStraight"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/southStraight"
+                        android:src="@drawable/greenone"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="left|bottom"
+                    android:layout_marginBottom="10dp"
+                    >
+                    <TextView
+                        android:id="@+id/tv_southright"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/red"
+                        android:textSize="15dp"
+                        android:text=" "/>
+                    <ImageView
+                        android:onClick="southRight"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/southRight"
+                        android:src="@drawable/greenone"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="left|bottom"
+                    android:layout_marginBottom="10dp"
+                    >
+                    <TextView
+                        android:id="@+id/tv_southother"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/red"
+                        android:textSize="15dp"
+                        android:text=" "/>
+                    <ImageView
+                        android:onClick="southOther"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/southOther"
+                        android:src="@drawable/greenone"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|bottom"
+                android:orientation="vertical"
+                android:layout_marginLeft="140dp"
+                android:layout_marginBottom="240dp" >
+                <TextView
+                    android:id="@+id/tv_westpedestrain1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:textSize="15dp"
+                    android:text=" "/>
+                <ImageView
+                    android:onClick="westPedestrain1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/greenone"
+                    android:id="@+id/westPedestrain1"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|bottom"
+                android:layout_marginLeft="240dp"
+                android:layout_marginBottom="140dp">
+                <ImageView
+                    android:onClick="southPedestrain1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/greenone"
+                    android:id="@+id/southPedestrain1" />
+                <TextView
+                    android:id="@+id/tv_southpedestrain1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:textSize="15dp"
+                    android:text=" "/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|bottom"
+                android:layout_marginRight="240dp"
+                android:layout_marginBottom="140dp" >
+                <TextView
+                    android:id="@+id/tv_southpedestrain2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:textSize="15dp"
+                    android:text=" "/>
+                <ImageView
+                    android:onClick="southPedestrain2"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/greenone"
+                    android:id="@+id/southPedestrain2"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|bottom"
+                android:orientation="vertical"
+                android:layout_marginRight="140dp"
+                android:layout_marginBottom="240dp" >
+                <TextView
+                    android:id="@+id/tv_eastpedestrain2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:textSize="15dp"
+                    android:text=" "/>
+                <ImageView
+                    android:onClick="eastPedestrain2"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/greenone"
+                    android:id="@+id/eastPedestrain2"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="right|top"
+                android:layout_marginRight="240dp"
+                android:layout_marginTop="140dp"
+                >
+                <TextView
+                    android:id="@+id/tv_northpedestrain2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:textSize="15dp"
+                    android:text=" "/>
+                <ImageView
+                    android:onClick="northPedestrain2"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/greenone"
+                    android:id="@+id/northPedestrain2"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|top"
+                android:orientation="vertical"
+                android:layout_marginRight="140dp"
+                android:layout_marginTop="240dp">
+                <ImageView
+                    android:onClick="eastPedestrain1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/greenone"
+                    android:id="@+id/eastPedestrain1" />
+                <TextView
+                    android:id="@+id/tv_eastpedestrain1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:textSize="15dp"
+                    android:text=" "/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="left|top"
+                android:layout_marginLeft="240dp"
+                android:layout_marginTop="140dp"
+                >
+                <ImageView
+                    android:onClick="northPedestrain1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/greenone"
+                    android:id="@+id/northPedestrain1" />
+                <TextView
+                    android:id="@+id/tv_northpedestrain1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:textSize="15dp"
+                    android:text=" "/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="left|top"
+                android:layout_marginLeft="140dp"
+                android:layout_marginTop="240dp">
+                <ImageView
+                    android:onClick="westPedestrain2"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/greenone"
+                    android:id="@+id/westPedestrain2" />
+                <TextView
+                    android:id="@+id/tv_westpedestrain2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:textSize="15dp"
+                    android:text=" "/>
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="西方向备用"
+                android:layout_gravity="left|top"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/white" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="left|top"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                >
+                <ImageView
+                    android:onClick="westNone1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/greenone"
+                    android:id="@+id/westNone1" />
+                <TextView
+                    android:id="@+id/tv_westnone1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:textSize="15dp"
+                    android:text=" "/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|top"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp" >
+
+                <ImageView
+                    android:onClick="westNone2"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/greenone"
+                    android:id="@+id/westNone2"/>
+                <TextView
+                    android:id="@+id/tv_westnone2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:textSize="15dp"
+                    android:text=" "/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="北方向备用"
+                android:layout_gravity="right|top"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/white" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|top"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp">
+                <ImageView
+                    android:onClick="northNone2"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/greenone"
+                    android:id="@+id/northNone2" />
+                <TextView
+                    android:id="@+id/tv_northnone2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:textSize="15dp"
+                    android:text=" "/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|top"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="10dp">
+                <ImageView
+                    android:onClick="northNone1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/greenone"
+                    android:id="@+id/northNone1" />
+                <TextView
+                    android:id="@+id/tv_northnone1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:textSize="15dp"
+                    android:text=" "/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="东方向备用"
+                android:layout_gravity="right|bottom"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="30dp"
+                android:textColor="@color/white" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|bottom"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp">
+                <ImageView
+                    android:onClick="eastNone1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/greenone"
+                    android:id="@+id/eastNone1" />
+                <TextView
+                    android:id="@+id/tv_eastnone1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:textSize="15dp"
+                    android:text=" "/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|bottom"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="10dp">
+                <ImageView
+                    android:onClick="eastNone2"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/greenone"
+                    android:id="@+id/eastNone2" />
+                <TextView
+                    android:id="@+id/tv_eastnone2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:textSize="15dp"
+                    android:text=" "/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="南方向备用"
+                android:layout_gravity="left|bottom"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="30dp"
+                android:textColor="@color/white" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|bottom"
+                android:layout_marginLeft="50dp"
+                android:layout_marginBottom="10dp" >
+                <ImageView
+                    android:onClick="southNone2"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/greenone"
+                    android:id="@+id/southNone2"/>
+                <TextView
+                    android:id="@+id/tv_southnone2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:textSize="15dp"
+                    android:text=" "/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|bottom"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp">
+                <ImageView
+                    android:onClick="southNone1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/greenone"
+                    android:id="@+id/southNone1" />
+                <TextView
+                    android:id="@+id/tv_southnone1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:textSize="15dp"
+                    android:text=" "/>
+            </LinearLayout>
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:scrollbars="horizontal"
+        >
+<Button
+    android:onClick="configSaveToTsc"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/phase_config_save"/>
+        <Button
+
+            android:onClick="checkData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/check"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/tv_phase_config_alarm"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="vertical"
+            android:singleLine="false"
+            android:maxLines="15"
+            android:textColor="#FF0000"
+            android:text=""/>
+
+
+    </LinearLayout>
+</LinearLayout>

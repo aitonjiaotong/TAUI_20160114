@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".MainActivity">
+
+    <LinearLayout
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1">
+
+            <GridView
+                android:id="@+id/gv_tsc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@color/top_view_color"
+                android:numColumns="3"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_broadCastIp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="2.5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_guangbo_secector"
+                android:onClick="broadCastIp"
+                android:text="广播"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/btn_textSize"/>
+
+            <Button
+                android:id="@+id/btn_loadtsc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2.5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_guanli_selector"
+                android:onClick="loadTsc"
+                android:text="管理"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/btn_textSize"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,595 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cn.com.aiton.taui.StageActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+
+            >
+
+            <ImageView
+                android:layout_width="600dp"
+                android:layout_height="600dp"
+                android:src="@drawable/back20130627" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="left|center_vertical"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:onClick="westLeft"
+                    android:id="@+id/stage_westLeft"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/redone" />
+
+                <ImageView
+                    android:onClick="westStraight"
+                    android:id="@+id/stage_westStraight"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/redone" />
+
+                <ImageView
+                    android:onClick="westRight"
+                    android:id="@+id/stage_westRight"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/redone" />
+
+                <ImageView
+                    android:onClick="westOther"
+                    android:id="@+id/stage_westOther"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/redone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="25dp"
+                android:layout_gravity="right|center_vertical"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:onClick="eastOther"
+                    android:id="@+id/stage_eastOther"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/redone" />
+
+                <ImageView
+                    android:onClick="eastRight"
+                    android:id="@+id/stage_eastRight"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/redone" />
+
+                <ImageView
+                    android:onClick="eastStraight"
+                    android:id="@+id/stage_eastStraight"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/redone" />
+
+                <ImageView
+                    android:onClick="eastLeft"
+                    android:id="@+id/stage_eastLeft"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/redone" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center_horizontal|top"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:onClick="northOther"
+                    android:id="@+id/stage_northOther"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/redone" />
+
+                <ImageView
+                    android:onClick="northRight"
+                    android:id="@+id/stage_northRight"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/redone" />
+
+                <ImageView
+                    android:onClick="northStraight"
+                    android:id="@+id/stage_northStraight"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/redone" />
+
+                <ImageView
+                    android:onClick="northLeft"
+                    android:id="@+id/stage_northLeft"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/redone" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center_horizontal|bottom"
+                android:orientation="horizontal">
+                <ImageView
+                    android:onClick="southLeft"
+                    android:id="@+id/stage_southLeft"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/redone" />
+
+
+                <ImageView
+                    android:onClick="southStraight"
+                    android:id="@+id/stage_southStraight"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/redone" />
+
+
+                <ImageView
+                    android:onClick="southRight"
+                    android:id="@+id/stage_southRight"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/redone" />
+
+
+                <ImageView
+                    android:onClick="southOther"
+                    android:id="@+id/stage_southOther"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/redone" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|top"
+                android:layout_marginLeft="140dp"
+                android:layout_marginTop="340dp"
+                >
+                <ImageView
+                    android:onClick="westPedestrain1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/redone"
+                    android:id="@+id/stage_westPedestrain1" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|top"
+                android:layout_marginLeft="140dp"
+                android:layout_marginTop="240dp"
+                >
+                <ImageView
+                    android:onClick="westPedestrain2"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/redone"
+                    android:id="@+id/stage_westPedestrain2" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|top"
+                android:layout_marginLeft="350dp"
+                android:layout_marginTop="140dp"
+                >
+                <ImageView
+                    android:onClick="northPedestrain2"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/redone"
+                    android:id="@+id/stage_northPedestrain2" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|top"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="140dp"
+                >
+                <ImageView
+                    android:onClick="northPedestrain1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/redone"
+                    android:id="@+id/stage_northPedestrain1" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|top"
+                android:layout_marginLeft="340dp"
+                android:layout_marginTop="440dp"
+                >
+                <ImageView
+                    android:onClick="southPedestrain1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/redone"
+                    android:id="@+id/stage_southPedestrain1" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|top"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="440dp"
+                >
+                <ImageView
+                    android:onClick="southPedestrain2"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/redone"
+                    android:id="@+id/stage_southPedestrain2" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|top"
+                android:layout_marginRight="140dp"
+                android:layout_marginTop="240dp"
+                >
+                <ImageView
+                    android:onClick="eastPedestrain1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/redone"
+                    android:id="@+id/stage_eastPedestrain1" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|top"
+                android:layout_marginRight="140dp"
+                android:layout_marginTop="320dp"
+                >
+                <ImageView
+                    android:onClick="eastPedestrain2"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/redone"
+                    android:id="@+id/stage_eastPedestrain2" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="right|top"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                >
+                <ImageView
+                    android:onClick="northTurnAround"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/redone"
+                    android:id="@+id/stage_north_turn_around" />
+                <ImageView
+                    android:onClick="northLeftStraightRight"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/redone"
+                    android:id="@+id/stage_north_left_straight_right" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="left|top"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                >
+                <ImageView
+                    android:onClick="westTurnAround"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/redone"
+                    android:id="@+id/stage_west_turn_around" />
+                <ImageView
+                    android:onClick="westLeftStraightRight"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/redone"
+                    android:id="@+id/stage_west_left_straight_right" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="left|bottom"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="5dp"
+                >
+                <ImageView
+                    android:onClick="southTurnAround"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/redone"
+                    android:id="@+id/stage_south_turn_around" />
+                <ImageView
+                    android:onClick="southLeftStraightRight"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/redone"
+                    android:id="@+id/stage_south_left_straight_right" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="right|bottom"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                >
+                <ImageView
+                    android:onClick="eastTurnAround"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/redone"
+                    android:id="@+id/stage_east_turn_around" />
+                <ImageView
+                    android:onClick="eastLeftStraightRight"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/redone"
+                    android:id="@+id/stage_east_left_straight_right" />
+            </LinearLayout>
+
+            <NumberPicker
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/np_stage_pattern_id"
+                android:layout_gravity="center" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="stageBtnSave"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="25dp"
+                android:text="保存"
+                android:id="@+id/bn_stage_save"
+                android:layout_gravity="right|bottom" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="stageBtnCreate"
+                android:layout_marginLeft="1dp"
+                android:layout_marginBottom="25dp"
+                android:text="创相"
+                android:id="@+id/bn_create_stage"
+                android:layout_gravity="left|bottom" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/horizontalScrollView">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:scrollbars="horizontal">
+
+        <include
+
+            android:id="@+id/stage1"
+            layout="@layout/small_phase_direc"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+
+        <include
+            android:id="@+id/stage2"
+            layout="@layout/small_phase_direc"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+
+        <include
+            android:id="@+id/stage3"
+            layout="@layout/small_phase_direc"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+
+        <include
+            android:id="@+id/stage4"
+            layout="@layout/small_phase_direc"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+
+        <include
+            android:id="@+id/stage5"
+            layout="@layout/small_phase_direc"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+
+        <include
+            android:id="@+id/stage6"
+            layout="@layout/small_phase_direc"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+
+        <include
+            android:id="@+id/stage7"
+            layout="@layout/small_phase_direc"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+
+        <include
+            android:id="@+id/stage8"
+            layout="@layout/small_phase_direc"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+
+        <include
+            android:id="@+id/stage9"
+            layout="@layout/small_phase_direc"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+        <include
+            android:id="@+id/stage10"
+            layout="@layout/small_phase_direc"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+        <include
+            android:id="@+id/stage11"
+            layout="@layout/small_phase_direc"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+        <include
+            android:id="@+id/stage12"
+            layout="@layout/small_phase_direc"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+        <include
+            android:id="@+id/stage13"
+            layout="@layout/small_phase_direc"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+        <include
+            android:id="@+id/stage14"
+            layout="@layout/small_phase_direc"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+        <include
+            android:id="@+id/stage15"
+            layout="@layout/small_phase_direc"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+        <include
+            android:id="@+id/stage16"
+            layout="@layout/small_phase_direc"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+        <include
+            android:id="@+id/stage17"
+            layout="@layout/small_phase_direc"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+        <include
+            android:id="@+id/stage18"
+            layout="@layout/small_phase_direc"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+
+        <include
+            android:id="@+id/stage19"
+            layout="@layout/small_phase_direc"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+        <include
+            android:id="@+id/stage20"
+            layout="@layout/small_phase_direc"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+        <include
+            android:id="@+id/stage21"
+            layout="@layout/small_phase_direc"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+        <include
+            android:id="@+id/stage22"
+            layout="@layout/small_phase_direc"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+        <include
+            android:id="@+id/stage23"
+            layout="@layout/small_phase_direc"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+        <include
+            android:id="@+id/stage24"
+            layout="@layout/small_phase_direc"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+        <include
+            android:id="@+id/stage25"
+            layout="@layout/small_phase_direc"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+        <include
+            android:id="@+id/stage26"
+            layout="@layout/small_phase_direc"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+        <include
+            android:id="@+id/stage27"
+            layout="@layout/small_phase_direc"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+        <include
+            android:id="@+id/stage28"
+            layout="@layout/small_phase_direc"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+        <include
+            android:id="@+id/stage29"
+            layout="@layout/small_phase_direc"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+        <include
+            android:id="@+id/stage30"
+            layout="@layout/small_phase_direc"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+        <include
+            android:id="@+id/stage31"
+            layout="@layout/small_phase_direc"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+        <include
+            android:id="@+id/stage32"
+            layout="@layout/small_phase_direc"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+    </LinearLayout>
+</HorizontalScrollView>
+
+</LinearLayout>

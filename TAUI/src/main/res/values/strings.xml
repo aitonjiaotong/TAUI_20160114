@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TAUi</string>
+    <string name="dummy_button">关于</string>
+    <string name="menu_tsc">信号</string>
+    <string name="menu_broadcast">广播</string>
+    <string name="menu_loadtsc">加载</string>
+    <string name="dummy_content">QIQI\nCONTENT</string>
+    <string name="title_activity_phase">相位</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="manual_next_step">下一步</string>
+    <string name="manual_next_phase">下相位</string>
+    <string name="manual_next_direc">下方向</string>
+    <string name="manual_manual">手动控制</string>
+    <string name="manual_self">自主控制</string>
+    <string name="manual_north">北</string>
+    <string name="manual_east">东</string>
+    <string name="manual_south">南</string>
+    <string name="deleteTsc">删除信号机</string>
+    <string name="save">保存</string>
+    <string name="phase_config_save">保存到信号机</string>
+    <string name="manual_west">西</string>
+    <string name="title_activity_phase_config">相位配置</string>
+    <string name="title_activity_basetime">时基</string>
+    <string name="title_activity_collision">绿冲突</string>
+    <string name="title_activity_stage">阶段</string>
+    <string name="title_activity_detector">检测器</string>
+    <string name="title_activity_lamp_check">灯泡检测</string>
+    <string name="title_activity_basetime_month">时基月</string>
+    <string name="title_activity_basetime_week">时基周</string>
+    <string name="title_activity_basetime_day">时基日</string>
+    <string name="monday">星期一</string>
+    <string name="tuesday">星期二</string>
+    <string name="wednesday">星期三</string>
+    <string name="thursday">星期四</string>
+    <string name="friday">星期五</string>
+    <string name="saturday">星期六</string>
+    <string name="sunday">星期日</string>
+    <string name="all">所有</string>
+    <string name="january">一月</string>
+    <string name="february">二月</string>
+    <string name="march">三月</string>
+    <string name="april">四月</string>
+    <string name="may">五月</string>
+    <string name="june">六月</string>
+    <string name="july">七月</string>
+    <string name="august">八月</string>
+    <string name="september">九月</string>
+    <string name="october">十月</string>
+    <string name="november">十一月</string>
+    <string name="december">十二月</string>
+    <string name="submit">保存到数据库</string>
+    <string name="check">检测信号机数据合法性</string>
+    <string name="read">读取</string>
+    <string name="sendtotsc">更新到信号机</string>
+    <string name="title_activity_manaul">手动控制</string>
+    <string name="title_activity_schedule">时段设置</string>
+    <string name="loadtsc">加载信号机</string>
+    <string name="openhardwarecheck">灯泡检测（硬件）</string>
+    <string name="openselfcheck">灯泡检测</string>
+    <string name="schedule_edit">修改</string>
+    <string name="can">CAN</string>
+    <string name="run">RUN</string>
+    <string name="r1">R1</string>
+    <string name="y1">Y1</string>
+    <string name="g1">G1</string>
+    <string name="r2">R2</string>
+    <string name="y2">Y2</string>
+    <string name="g2">G2</string>
+    <string name="r3">R3</string>
+    <string name="y3">Y3</string>
+    <string name="g3">G3</string>
+    <string name="r4">R4</string>
+    <string name="y4">Y4</string>
+    <string name="g4">G4</string>
+    <string name="title_activity_load">加载信号</string>
+    <string name="title_activity_phase01">PhaseActivity01</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

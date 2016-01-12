@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:id="@+id/tscListItem"
+    android:paddingBottom="3dip">
+
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:src="@drawable/back20130627"/>
+    <TextView
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="aaaaaaaa"
+        android:id="@+id/itemTitle">
+    </TextView>
+    <TextView
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="192.168.1.111"
+        android:id="@+id/itemIPAddress">
+    </TextView>
+
+</LinearLayout>
