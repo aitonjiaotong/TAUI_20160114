@@ -992,6 +992,8 @@
                 android:orientation="horizontal">
 
                 <Button
+                    android:textColor="@color/white"
+
                     android:background="@drawable/btn_secector"
                     android:onClick="saveDetecotr"
                     android:layout_width="match_parent"

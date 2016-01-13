@@ -282,6 +282,7 @@
 
 
         <Button
+            android:textColor="@color/white"
             android:id="@+id/btMonthBtnRead"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -297,6 +298,8 @@
             android:background="@color/line_white"/>
 
         <Button
+            android:textColor="@color/white"
+
             android:id="@+id/btMonthBtnSave"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
