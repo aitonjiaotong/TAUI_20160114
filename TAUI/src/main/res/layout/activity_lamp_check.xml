@@ -56,23 +56,75 @@
         </HorizontalScrollView>
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-        <CheckBox
-            android:id="@+id/cb_softcheck"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/openselfcheck"/>
-        <CheckBox
-            android:id="@+id/cb_hardcheck"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/openhardwarecheck"/>
-        <Button
-            android:onClick="btnSave"
-            android:text="@string/save"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+        android:background="@color/line_white"
+        android:layout_width="match_parent"
+        android:layout_height="2.5dp"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <CheckBox
+                    android:background="@drawable/check_selector"
+                    android:id="@+id/cb_softcheck"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/openselfcheck"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="2.5dp"
+                android:layout_height="match_parent">
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <CheckBox
+                    android:background="@drawable/check_selector"
+
+                    android:id="@+id/cb_hardcheck"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/openhardwarecheck"/>
+            </RelativeLayout>
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:background="@drawable/btn_secector"
+                android:gravity="center"
+                android:onClick="btnSave"
+                android:text="@string/save"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@color/line_white"
+        android:layout_width="match_parent"
+        android:layout_height="2.5dp"/>
 
 </LinearLayout>

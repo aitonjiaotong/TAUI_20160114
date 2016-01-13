@@ -242,7 +242,7 @@
                                     android:src="@drawable/offone"/>
 
                                 <TextView
-                                    android:id="@+id/textView4"
+                                    android:id="@+id/tv_northnone1"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text=" "
@@ -265,7 +265,7 @@
                                     android:src="@drawable/offone"/>
 
                                 <TextView
-                                    android:id="@+id/textView5"
+                                    android:id="@+id/tv_northnone2"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text=" "
@@ -411,7 +411,7 @@
                         android:layout_weight="1">
 
                         <TextView
-                            android:id="@+id/textView7"
+                            android:id="@+id/tv_countdown"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_centerHorizontal="true"
@@ -571,7 +571,7 @@
                                     android:src="@drawable/offone"/>
 
                                 <TextView
-                                    android:id="@+id/textView8"
+                                    android:id="@+id/tv_southnone1"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text=" "
@@ -594,7 +594,7 @@
                                     android:src="@drawable/offone"/>
 
                                 <TextView
-                                    android:id="@+id/textView9"
+                                    android:id="@+id/tv_southnone2"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text=" "
@@ -757,7 +757,7 @@
                                     android:src="@drawable/offone"/>
 
                                 <TextView
-                                    android:id="@+id/textView11"
+                                    android:id="@+id/tv_eastnone2"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text=" "
@@ -780,7 +780,7 @@
                                     android:src="@drawable/offone"/>
 
                                 <TextView
-                                    android:id="@+id/textView12"
+                                    android:id="@+id/tv_eastnone1"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text=" "

@@ -85,13 +85,15 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="五月"
-                android:id="@+id/cb_may" />
+                android:id="@+id/cb_may"
+                android:checked="false"/>
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="六月"
-                android:id="@+id/cb_jun" />
+                android:id="@+id/cb_jun"
+                android:checked="false"/>
 
         </LinearLayout>
         <LinearLayout
@@ -102,37 +104,43 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="七月"
-                android:id="@+id/cb_jul" />
+                android:id="@+id/cb_jul"
+                android:checked="false"/>
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="八月"
-                android:id="@+id/cb_aug" />
+                android:id="@+id/cb_aug"
+                android:checked="false"/>
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="九月"
-                android:id="@+id/cb_sep" />
+                android:id="@+id/cb_sep"
+                android:checked="false"/>
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="十月"
-                android:id="@+id/cb_oct" />
+                android:id="@+id/cb_oct"
+                android:checked="false"/>
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="十一月"
-                android:id="@+id/cb_nov" />
+                android:id="@+id/cb_nov"
+                android:checked="false"/>
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="十二月"
-                android:id="@+id/cb_dec" />
+                android:id="@+id/cb_dec"
+                android:checked="false"/>
         </LinearLayout>
     </LinearLayout>
     <LinearLayout

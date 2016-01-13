@@ -4,76 +4,101 @@
     android:orientation="vertical"
     android:layout_height="wrap_content">
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/run"/>
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/can"/>
     <CheckBox
+        android:background="@drawable/check_selector"
         android:id="@+id/cb_r1"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/r1"/>
     <CheckBox
+        android:background="@drawable/check_selector"
+
         android:id="@+id/cb_y1"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/y1"/>
     <CheckBox
+        android:background="@drawable/check_selector"
+
         android:id="@+id/cb_g1"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/g1"/>
     <CheckBox
+        android:background="@drawable/check_selector"
+
         android:id="@+id/cb_r2"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/r2"/>
     <CheckBox
+        android:background="@drawable/check_selector"
+
         android:id="@+id/cb_y2"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/y2"/>
     <CheckBox
+        android:background="@drawable/check_selector"
+
         android:id="@+id/cb_g2"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/g2"/>
     <CheckBox
+        android:background="@drawable/check_selector"
+
         android:id="@+id/cb_r3"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/r3"/>
     <CheckBox
+        android:background="@drawable/check_selector"
+
         android:id="@+id/cb_y3"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/y3"/>
     <CheckBox
+        android:background="@drawable/check_selector"
+
         android:id="@+id/cb_g3"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/g3"/>
     <CheckBox
+        android:background="@drawable/check_selector"
+
         android:id="@+id/cb_r4"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/r4"/>
     <CheckBox
+        android:background="@drawable/check_selector"
+
         android:id="@+id/cb_y4"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/y4"/>
     <CheckBox
+        android:background="@drawable/check_selector"
+
         android:id="@+id/cb_g4"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/g4"/>
     <CheckBox
+        android:background="@drawable/check_selector"
+
         android:id="@+id/cb_all"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/all"/>
 </LinearLayout>

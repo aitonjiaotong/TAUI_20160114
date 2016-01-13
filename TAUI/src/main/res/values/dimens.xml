@@ -3,4 +3,5 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="btn_textSize">22sp</dimen>
+    <dimen name="month_tv_size">22sp</dimen>
 </resources>
