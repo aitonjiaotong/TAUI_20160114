@@ -114,7 +114,7 @@
 
             <Button
                 android:textColor="@color/white"
-
+                android:id="@+id/btnSave"
                 android:background="@drawable/btn_secector"
                 android:onClick="btnSave"
                 android:text="@string/save"

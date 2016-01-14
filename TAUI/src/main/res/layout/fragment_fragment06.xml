@@ -32,70 +32,6 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1">
 
-                        <RelativeLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginTop="10dp">
-
-                            <LinearLayout
-                                android:id="@+id/linearLayout"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_alignParentLeft="true"
-                                android:layout_alignParentStart="true"
-                                android:layout_alignParentTop="true"
-                                android:layout_gravity="left|top">
-
-                                <ImageView
-                                    android:id="@+id/m_westNone1"
-                                    android:layout_width="25dp"
-                                    android:layout_height="25dp"
-                                    android:src="@drawable/offone"/>
-
-                                <TextView
-                                    android:id="@+id/tv_westnone1"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text=" "
-                                    android:textColor="@color/red"
-                                    android:textSize="15dp"/>
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_above="@+id/textView3"
-                                android:layout_alignEnd="@+id/textView3"
-                                android:layout_alignRight="@+id/textView3"
-                                android:layout_gravity="left|top">
-
-                                <ImageView
-                                    android:id="@+id/m_westNone2"
-                                    android:layout_width="25dp"
-                                    android:layout_height="25dp"
-                                    android:src="@drawable/offone"/>
-
-                                <TextView
-                                    android:id="@+id/tv_westnone2"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text=" "
-                                    android:textColor="@color/red"
-                                    android:textSize="15dp"/>
-                            </LinearLayout>
-
-                            <TextView
-                                android:id="@+id/textView3"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_alignParentLeft="true"
-                                android:layout_alignParentStart="true"
-                                android:layout_below="@+id/linearLayout"
-                                android:layout_gravity="left|top"
-                                android:text="西方向备用"
-                                android:textColor="@color/white"/>
-                        </RelativeLayout>
                     </RelativeLayout>
 
                     <LinearLayout
@@ -107,183 +43,145 @@
 
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:orientation="horizontal">
-
-                            <RelativeLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1">
-
-                                <LinearLayout
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_centerHorizontal="true"
-                                    android:layout_centerVertical="true"
-                                    android:layout_gravity="center_horizontal|top"
-                                    android:orientation="horizontal">
-
-                                    <ImageView
-                                        android:id="@+id/m_northOther"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        android:src="@drawable/offone"/>
-
-                                    <ImageView
-                                        android:id="@+id/m_northRight"
-
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        android:src="@drawable/offone"/>
-
-                                    <ImageView
-                                        android:id="@+id/m_northStriaght"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        android:src="@drawable/offone"/>
-
-                                    <ImageView
-                                        android:id="@+id/m_northLeft"
-
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        android:src="@drawable/offone"/>
-                                </LinearLayout>
-                            </RelativeLayout>
-
-                            <RelativeLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1">
-                            </RelativeLayout>
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:orientation="horizontal">
-
-                            <RelativeLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1">
-
-                                <LinearLayout
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_centerHorizontal="true"
-                                    android:layout_centerVertical="true"
-                                    android:layout_gravity="left|top">
-
-                                    <ImageView
-                                        android:id="@+id/m_northPedestrain1"
-                                        android:layout_width="25dp"
-                                        android:layout_height="25dp"
-                                        android:src="@drawable/offone"/>
-                                </LinearLayout>
-                            </RelativeLayout>
-
-                            <RelativeLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1">
-
-                                <LinearLayout
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_centerHorizontal="true"
-                                    android:layout_centerVertical="true"
-                                    android:layout_gravity="left|top">
-
-                                    <ImageView
-                                        android:id="@+id/m_northPedestrain2"
-                                        android:layout_width="25dp"
-                                        android:layout_height="25dp"
-                                        android:src="@drawable/offone"/>
-                                </LinearLayout>
-                            </RelativeLayout>
-                        </LinearLayout>
-                    </LinearLayout>
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-
-                        android:layout_height="match_parent"
-                        android:layout_weight="1">
-
-                        <RelativeLayout
-                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_alignParentEnd="true"
-                            android:layout_alignParentRight="true"
+                            android:orientation="horizontal"
                             android:layout_alignParentTop="true"
-                            android:layout_marginRight="10dp"
-                            android:layout_marginTop="10dp">
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true">
 
                             <LinearLayout
-                                android:id="@+id/linearLayout2"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_alignParentLeft="true"
-                                android:layout_alignParentStart="true"
-                                android:layout_alignParentTop="true"
-                                android:layout_gravity="left|top">
+                                android:orientation="vertical">
 
                                 <ImageView
-                                    android:id="@+id/m_northNone1"
-                                    android:layout_width="25dp"
-                                    android:layout_height="25dp"
-                                    android:src="@drawable/offone"/>
+                                    android:id="@+id/northOther4"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/detectorline"/>
 
-                                <TextView
-                                    android:id="@+id/tv_northnone1"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text=" "
-                                    android:textColor="@color/red"
-                                    android:textSize="15dp"/>
+                                <ImageView
+                                    android:id="@+id/northOther3"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/detectorline"/>
+
+                                <ImageView
+                                    android:id="@+id/northOther2"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/detectorline"/>
+
+                                <ImageView
+                                    android:id="@+id/northOther1"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/detectorline"/>
                             </LinearLayout>
 
                             <LinearLayout
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_above="@+id/textView6"
-                                android:layout_alignEnd="@+id/textView6"
-                                android:layout_alignRight="@+id/textView6"
-                                android:layout_gravity="left|top">
+                                android:orientation="vertical">
 
                                 <ImageView
-                                    android:id="@+id/m_northNone2"
-                                    android:layout_width="25dp"
-                                    android:layout_height="25dp"
-                                    android:src="@drawable/offone"/>
+                                    android:id="@+id/northRight4"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/detectorline"/>
 
-                                <TextView
-                                    android:id="@+id/tv_northnone2"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text=" "
-                                    android:textColor="@color/red"
-                                    android:textSize="15dp"/>
+                                <ImageView
+                                    android:id="@+id/northRight3"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/detectorline"/>
+
+                                <ImageView
+                                    android:id="@+id/northRight2"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/detectorline"/>
+
+                                <ImageView
+                                    android:id="@+id/northRight1"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/detectorline"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/northStriaght4"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/detectorline"/>
+
+                                <ImageView
+                                    android:id="@+id/northStriaght3"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/detectorline"/>
+
+                                <ImageView
+                                    android:id="@+id/northStriaght2"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/detectorline"/>
+
+                                <ImageView
+                                    android:id="@+id/northStriaght1"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/detectorline"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/northLeft4"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/detectorline"/>
+
+                                <ImageView
+                                    android:id="@+id/northLeft3"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/detectorline"/>
+
+                                <ImageView
+                                    android:id="@+id/northLeft2"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/detectorline"/>
+
+                                <ImageView
+                                    android:id="@+id/northLeft1"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/detectorline"/>
                             </LinearLayout>
 
                             <TextView
-                                android:id="@+id/textView6"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_alignParentLeft="true"
-                                android:layout_alignParentStart="true"
-                                android:layout_below="@+id/linearLayout2"
-                                android:layout_gravity="left|top"
-                                android:text="北方向备用"
-                                android:textColor="@color/white"/>
-                        </RelativeLayout>
+                                android:text="                   "/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
                     </RelativeLayout>
                 </LinearLayout>
 
@@ -301,107 +199,151 @@
 
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:orientation="horizontal">
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
 
-                            <RelativeLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:id="@+id/textView24"/>
 
-                            <RelativeLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:id="@+id/textView23"/>
 
-                                <LinearLayout
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_centerHorizontal="true"
-                                    android:layout_centerVertical="true"
-                                    android:layout_gravity="left|top">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:id="@+id/textView21"/>
 
-                                    <ImageView
-                                        android:id="@+id/m_westPedestrain2"
-                                        android:layout_width="25dp"
-                                        android:layout_height="25dp"
-                                        android:src="@drawable/offone"/>
-                                </LinearLayout>
-                            </RelativeLayout>
-                        </LinearLayout>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:id="@+id/textView22"/>
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:orientation="horizontal">
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
 
-                            <RelativeLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1">
+                                <ImageView
+                                    android:id="@+id/westLeft4"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/detectorlinee"/>
 
-                                <LinearLayout
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_centerHorizontal="true"
-                                    android:layout_centerVertical="true"
-                                    android:layout_gravity="left|center_vertical"
-                                    android:orientation="vertical">
+                                <ImageView
+                                    android:id="@+id/westLeft3"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/detectorlinee"/>
 
-                                    <ImageView
-                                        android:id="@+id/m_westLeft"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        android:src="@drawable/offone"/>
+                                <ImageView
+                                    android:id="@+id/westLeft2"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/detectorlinee"/>
 
-                                    <ImageView
-                                        android:id="@+id/m_westStriaght"
+                                <ImageView
+                                    android:id="@+id/westLeft1"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/detectorlinee"/>
+                            </LinearLayout>
 
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        android:src="@drawable/offone"/>
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
 
-                                    <ImageView
-                                        android:id="@+id/m_westRight"
+                                <ImageView
+                                    android:id="@+id/westStriaght4"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/detectorlinee"/>
 
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        android:src="@drawable/offone"/>
+                                <ImageView
+                                    android:id="@+id/westStriaght3"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/detectorlinee"/>
 
-                                    <ImageView
-                                        android:id="@+id/m_westOther"
+                                <ImageView
+                                    android:id="@+id/westStriaght2"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/detectorlinee"/>
 
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        android:src="@drawable/offone"/>
-                                </LinearLayout>
-                            </RelativeLayout>
+                                <ImageView
+                                    android:id="@+id/westStriaght1"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/detectorlinee"/>
+                            </LinearLayout>
 
-                            <RelativeLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1">
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
 
-                                <LinearLayout
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_centerHorizontal="true"
-                                    android:layout_centerVertical="true"
-                                    android:layout_gravity="left|top">
+                                <ImageView
+                                    android:id="@+id/westRight4"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/detectorlinee"/>
 
-                                    <ImageView
-                                        android:id="@+id/m_westPedestrain1"
-                                        android:layout_width="25dp"
-                                        android:layout_height="25dp"
-                                        android:src="@drawable/offone"/>
-                                </LinearLayout>
-                            </RelativeLayout>
+                                <ImageView
+                                    android:id="@+id/westRight3"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/detectorlinee"/>
+
+                                <ImageView
+                                    android:id="@+id/westRight2"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/detectorlinee"/>
+
+                                <ImageView
+                                    android:id="@+id/westRight1"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/detectorlinee"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/westOther4"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/detectorlinee"/>
+
+                                <ImageView
+                                    android:id="@+id/westOther3"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/detectorlinee"/>
+
+                                <ImageView
+                                    android:id="@+id/westOther2"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/detectorlinee"/>
+
+                                <ImageView
+                                    android:id="@+id/westOther1"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/detectorlinee"/>
+                            </LinearLayout>
                         </LinearLayout>
                     </LinearLayout>
 
@@ -410,129 +352,159 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1">
 
-                        <TextView
-                            android:id="@+id/tv_countdown"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_centerHorizontal="true"
-                            android:layout_centerVertical="true"
-                            android:layout_gravity="center"
-                            android:text="99"
-                            android:textColor="@color/white"
-                            android:textSize="20dp"/>
                     </RelativeLayout>
 
-                    <LinearLayout
+                    <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:orientation="vertical">
+                        >
 
                         <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:orientation="horizontal">
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true">
 
-                            <RelativeLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
 
-                                <LinearLayout
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_centerHorizontal="true"
-                                    android:layout_centerVertical="true"
-                                    android:layout_gravity="right|top">
+                                <ImageView
+                                    android:id="@+id/eastOther1"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/detectorlinee"/>
 
-                                    <ImageView
-                                        android:id="@+id/m_eastPedestrain1"
-                                        android:layout_width="25dp"
-                                        android:layout_height="25dp"
-                                        android:src="@drawable/offone"/>
-                                </LinearLayout>
-                            </RelativeLayout>
+                                <ImageView
+                                    android:id="@+id/eastOther2"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/detectorlinee"/>
 
-                            <RelativeLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1">
+                                <ImageView
+                                    android:id="@+id/eastOther3"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/detectorlinee"/>
 
-                                <LinearLayout
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_centerHorizontal="true"
-                                    android:layout_centerVertical="true"
-                                    android:layout_gravity="right|center_vertical"
-                                    android:orientation="vertical">
+                                <ImageView
+                                    android:id="@+id/eastOther4"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/detectorlinee"/>
+                            </LinearLayout>
 
-                                    <ImageView
-                                        android:id="@+id/m_eastOther"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        android:src="@drawable/offone"/>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
 
-                                    <ImageView
-                                        android:id="@+id/m_eastRight"
+                                <ImageView
+                                    android:id="@+id/eastRight1"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/detectorlinee"/>
 
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        android:src="@drawable/offone"/>
+                                <ImageView
+                                    android:id="@+id/eastRight2"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/detectorlinee"/>
 
-                                    <ImageView
-                                        android:id="@+id/m_eastStriaght"
+                                <ImageView
+                                    android:id="@+id/eastRight3"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/detectorlinee"/>
 
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        android:src="@drawable/offone"/>
+                                <ImageView
+                                    android:id="@+id/eastRight4"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/detectorlinee"/>
+                            </LinearLayout>
 
-                                    <ImageView
-                                        android:id="@+id/m_eastLeft"
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
 
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        android:src="@drawable/offone"/>
-                                </LinearLayout>
-                            </RelativeLayout>
+                                <ImageView
+                                    android:id="@+id/eastStriaght1"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/detectorlinee"/>
+
+                                <ImageView
+                                    android:id="@+id/eastStriaght2"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/detectorlinee"/>
+
+                                <ImageView
+                                    android:id="@+id/eastStriaght3"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/detectorlinee"/>
+
+                                <ImageView
+                                    android:id="@+id/eastStriaght4"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/detectorlinee"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/eastLeft1"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/detectorlinee"/>
+
+                                <ImageView
+                                    android:id="@+id/eastLeft2"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/detectorlinee"/>
+
+                                <ImageView
+                                    android:id="@+id/eastLeft3"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/detectorlinee"/>
+
+                                <ImageView
+                                    android:id="@+id/eastLeft4"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/detectorlinee"/>
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""/>
                         </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:orientation="horizontal">
-
-                            <RelativeLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1">
-
-                                <LinearLayout
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_centerHorizontal="true"
-                                    android:layout_centerVertical="true"
-                                    android:layout_gravity="right|top">
-
-                                    <ImageView
-                                        android:id="@+id/m_eastPedestrain2"
-                                        android:layout_width="25dp"
-                                        android:layout_height="25dp"
-                                        android:src="@drawable/offone"/>
-                                </LinearLayout>
-                            </RelativeLayout>
-
-                            <RelativeLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1"/>
-                        </LinearLayout>
-                    </LinearLayout>
+                    </RelativeLayout>
                 </LinearLayout>
 
                 <LinearLayout
@@ -546,259 +518,156 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1">
 
-                        <RelativeLayout
+                    </RelativeLayout>
+
+                    <RelativeLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|bottom"
+                            android:orientation="horizontal"
                             android:layout_alignParentBottom="true"
                             android:layout_alignParentLeft="true"
-                            android:layout_alignParentStart="true"
-                            android:layout_marginBottom="10dp"
-                            android:layout_marginLeft="10dp">
-
-                            <LinearLayout
-                                android:id="@+id/linearLayout3"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_alignParentLeft="true"
-                                android:layout_alignParentStart="true"
-                                android:layout_alignParentTop="true"
-                                android:layout_gravity="left|top">
-
-                                <ImageView
-                                    android:id="@+id/m_southNone1"
-                                    android:layout_width="25dp"
-                                    android:layout_height="25dp"
-                                    android:src="@drawable/offone"/>
-
-                                <TextView
-                                    android:id="@+id/tv_southnone1"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text=" "
-                                    android:textColor="@color/red"
-                                    android:textSize="15dp"/>
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_above="@+id/textView10"
-                                android:layout_alignEnd="@+id/textView10"
-                                android:layout_alignRight="@+id/textView10"
-                                android:layout_gravity="left|top">
-
-                                <ImageView
-                                    android:id="@+id/m_southNone2"
-                                    android:layout_width="25dp"
-                                    android:layout_height="25dp"
-                                    android:src="@drawable/offone"/>
-
-                                <TextView
-                                    android:id="@+id/tv_southnone2"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text=" "
-                                    android:textColor="@color/red"
-                                    android:textSize="15dp"/>
-                            </LinearLayout>
+                            android:layout_alignParentStart="true">
 
                             <TextView
-                                android:id="@+id/textView10"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_alignParentLeft="true"
-                                android:layout_alignParentStart="true"
-                                android:layout_below="@+id/linearLayout3"
-                                android:layout_gravity="left|top"
-                                android:text="南方向备用"
-                                android:textColor="@color/white"/>
-                        </RelativeLayout>
+                                android:text="            "/>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/southOther1"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/detectorline"/>
+
+                                <ImageView
+                                    android:id="@+id/southOther2"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/detectorline"/>
+
+                                <ImageView
+                                    android:id="@+id/southOther3"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/detectorline"/>
+
+                                <ImageView
+                                    android:id="@+id/southOther4"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/detectorline"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/southRight1"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/detectorline"/>
+
+                                <ImageView
+                                    android:id="@+id/southRight2"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/detectorline"/>
+
+                                <ImageView
+                                    android:id="@+id/southRight3"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/detectorline"/>
+
+                                <ImageView
+                                    android:id="@+id/southRight4"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/detectorline"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/southStriaght1"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/detectorline"/>
+
+                                <ImageView
+                                    android:id="@+id/southStriaght2"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/detectorline"/>
+
+                                <ImageView
+                                    android:id="@+id/southStriaght3"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/detectorline"/>
+
+                                <ImageView
+                                    android:id="@+id/southStriaght4"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/detectorline"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/southLeft1"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/detectorline"/>
+
+                                <ImageView
+                                    android:id="@+id/southLeft2"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/detectorline"/>
+
+                                <ImageView
+                                    android:id="@+id/southLeft3"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/detectorline"/>
+
+                                <ImageView
+                                    android:id="@+id/southLeft4"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/detectorline"/>
+                            </LinearLayout>
+                        </LinearLayout>
                     </RelativeLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:orientation="vertical">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:orientation="horizontal">
-
-                            <RelativeLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1">
-
-                                <LinearLayout
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_centerHorizontal="true"
-                                    android:layout_centerVertical="true"
-                                    android:layout_gravity="left|top">
-
-                                    <ImageView
-                                        android:id="@+id/m_southPedestrain2"
-                                        android:layout_width="25dp"
-                                        android:layout_height="25dp"
-                                        android:src="@drawable/offone"/>
-                                </LinearLayout>
-                            </RelativeLayout>
-
-                            <RelativeLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1">
-
-                                <LinearLayout
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_centerHorizontal="true"
-                                    android:layout_centerVertical="true"
-                                    android:layout_gravity="left|top">
-
-                                    <ImageView
-                                        android:id="@+id/m_southPedestrain1"
-                                        android:layout_width="25dp"
-                                        android:layout_height="25dp"
-                                        android:src="@drawable/offone"/>
-                                </LinearLayout>
-                            </RelativeLayout>
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:orientation="horizontal">
-
-                            <RelativeLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1"/>
-
-                            <RelativeLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1">
-
-                                <LinearLayout
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_centerHorizontal="true"
-                                    android:layout_centerVertical="true"
-                                    android:layout_gravity="center_horizontal|bottom"
-                                    android:orientation="horizontal">
-
-                                    <ImageView
-                                        android:id="@+id/m_southLeft"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        android:src="@drawable/offone"/>
-
-                                    <ImageView
-                                        android:id="@+id/m_southStriaght"
-
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        android:src="@drawable/offone"/>
-
-                                    <ImageView
-                                        android:id="@+id/m_southRight"
-
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        android:src="@drawable/offone"/>
-
-                                    <ImageView
-                                        android:id="@+id/m_southOther"
-
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        android:src="@drawable/offone"/>
-                                </LinearLayout>
-                            </RelativeLayout>
-                        </LinearLayout>
-                    </LinearLayout>
 
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1">
 
-                        <RelativeLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentBottom="true"
-                            android:layout_alignParentEnd="true"
-                            android:layout_alignParentRight="true"
-                            android:layout_marginBottom="10dp"
-                            android:layout_marginRight="10dp">
-
-                            <LinearLayout
-                                android:id="@+id/linearLayout4"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_alignParentLeft="true"
-                                android:layout_alignParentStart="true"
-                                android:layout_alignParentTop="true"
-                                android:layout_gravity="left|top">
-
-                                <ImageView
-                                    android:id="@+id/m_eastNone2"
-                                    android:layout_width="25dp"
-                                    android:layout_height="25dp"
-                                    android:src="@drawable/offone"/>
-
-                                <TextView
-                                    android:id="@+id/tv_eastnone2"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text=" "
-                                    android:textColor="@color/red"
-                                    android:textSize="15dp"/>
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_above="@+id/textView13"
-                                android:layout_alignEnd="@+id/textView13"
-                                android:layout_alignRight="@+id/textView13"
-                                android:layout_gravity="left|top">
-
-                                <ImageView
-                                    android:id="@+id/m_eastNone1"
-                                    android:layout_width="25dp"
-                                    android:layout_height="25dp"
-                                    android:src="@drawable/offone"/>
-
-                                <TextView
-                                    android:id="@+id/tv_eastnone1"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text=" "
-                                    android:textColor="@color/red"
-                                    android:textSize="15dp"/>
-                            </LinearLayout>
-
-                            <TextView
-                                android:id="@+id/textView13"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_alignParentLeft="true"
-                                android:layout_alignParentStart="true"
-                                android:layout_below="@+id/linearLayout4"
-                                android:layout_gravity="left|top"
-                                android:text="东方向备用"
-                                android:textColor="@color/white"/>
-                        </RelativeLayout>
                     </RelativeLayout>
                 </LinearLayout>
             </LinearLayout>
@@ -815,11 +684,6 @@
             android:layout_weight="3"
             android:background="@color/line_white"
             android:orientation="vertical">
-
-            <LinearLayout
-                android:background="@color/line_white"
-                android:layout_width="match_parent"
-                android:layout_height="2.5dp"/>
 
             <LinearLayout
                 android:background="@color/btn01"
@@ -985,6 +849,11 @@
             </LinearLayout>
 
             <LinearLayout
+                android:background="@color/line_white"
+                android:layout_width="match_parent"
+                android:layout_height="2.5dp"/>
+
+            <LinearLayout
                 android:layout_weight="1"
 
                 android:layout_width="match_parent"
@@ -993,9 +862,8 @@
 
                 <Button
                     android:textColor="@color/white"
-
+                    android:id="@+id/saveDetecotr"
                     android:background="@drawable/btn_secector"
-                    android:onClick="saveDetecotr"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
