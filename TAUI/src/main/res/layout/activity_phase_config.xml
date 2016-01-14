@@ -277,7 +277,7 @@
                         android:layout_height="wrap_content"
                         android:textColor="@color/red"
                         android:textSize="15dp"
-                        android:text=" "/>
+                        android:text=" 2222222"/>
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -350,7 +350,7 @@
                         android:layout_height="wrap_content"
                         android:textColor="@color/red"
                         android:textSize="15dp"
-                        android:text=" 333333333333333"/>
+                        android:text=" "/>
                     <ImageView
                         android:onClick="southStraight"
                         android:layout_width="20dp"
