@@ -35,4 +35,6 @@
     <color name="btn01">#23b7ff</color>
     <color name="btn02">#ffb342</color>
     <color name="line_white">#ffffff</color>
+    <color name="gridview_select_color">#ff1a1e</color>
+    <color name="gridview_unselect_color">#ff9237</color>
 </resources>

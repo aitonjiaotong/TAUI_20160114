@@ -6,7 +6,7 @@
 
     <LinearLayout
         android:layout_margin="5dp"
-        android:background="#e2b174"
+        android:background="@drawable/gridview_item_selector"
         android:orientation="vertical"
         android:layout_width="120dp"
         android:layout_height="120dp"
